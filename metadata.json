@@ -1,0 +1,6 @@
+{
+  "name": "Catholic Daily Prayer Companion",
+  "description": "A gentle, faithful Catholic prayer companion guiding you through the traditional daily rhythm of Catholic prayer: Morning Offering, Midday Angelus, Evening Examen, and Compline.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

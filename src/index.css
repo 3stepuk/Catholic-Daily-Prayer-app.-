@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, serif;
+  --font-display: "Cinzel", "Times New Roman", serif;
+  
+  --color-sacred-gold: #dfc37e;
+  --color-sacred-crimson: #d3524a;
+  --color-chapel-cream: #0c0b09; /* Midnight monastic dark sky */
+  --color-chapel-ash: #151311;   /* Warm dark candlelit slate */
+  --color-chapel-card: #1b1916;  /* Textured dark card */
+  --color-chapel-border: rgba(223, 195, 126, 0.15); /* Soft gold-tinted borders */
+}
+
+/* Base modifications for the prayer companion atmosphere */
+body {
+  background-color: var(--color-chapel-cream);
+  color: #e5e0d5;
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom fade effects and smooth animations */
+.prayer-card {
+  box-shadow: 0 4px 20px -2px rgba(138, 28, 20, 0.05), 0 2px 8px -1px rgba(197, 168, 92, 0.1);
+  border: 1px solid rgba(197, 168, 92, 0.2);
+}
+
+.liturgy-button {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Breathing animation for silent Jesus Prayer */
+@keyframes heartPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+    filter: blur(8px);
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.45;
+    filter: blur(12px);
+  }
+}
+
+.pulse-glow {
+  animation: heartPulse 10s infinite ease-in-out;
+}
